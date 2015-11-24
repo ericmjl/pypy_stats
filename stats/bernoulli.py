@@ -8,9 +8,9 @@ class bernoulli(object):
         super(bernoulli, self).__init__()
         self.p = p
         
-    def rvs(self, n):
+    def rvs(self, num_draws):
         draws = []
-        for i in range(n):
+        for i in range(num_draws):
             draws.append(int(random() > self.p))
 
         return draws
